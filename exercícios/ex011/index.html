@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/imagem-média.png" type="image/png">
+        <img src="Imagens/imagem grande.png" alt="Imagem flexível funcionando">
+    </picture>
+    <h2>Reproduzindo Áudio</h2>
+    <p>Áudio em html5</p>
+    <audio src="Áudios/Devaneio vívido.mp3" controls></audio>
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" controls loop>
+        <source src="Áudios/Devaneio vívido.mp3" type="audio/mpeg">
+        <source src="Áudios/Devaneio vívido.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta áudio <a href="Áudios/Devaneio vívido.mp3" download type="application/mp3">Faça o download</a></p>
+    </audio>
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas de Agrupamento Semânticas</title>
+    <style>
+        body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            font-size: 16px;
+            background-color:rgb(152, 151, 151);
+        }
+        *{
+            border-radius: 0px 20px;
+        }
+        header> h1{
+            box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.409);
+        }
+        nav{ 
+            background-color: blue;
+            box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.409);
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color:aliceblue;
+
+        }
+        nav>a:hover{
+            text-decoration: underline;
+            font-size: 20px;
+            color:red;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        h2,h1{
+            text-align: center;
+
+        }
+        h1{
+            font-size: 2em;
+        }
+        article{
+            background-color: white;
+            color: black;
+            text-align: justify;
+            padding: 5px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 0px;
+            padding: 4px;
+        }
+        footer >p{
+            margin: 0px;
+        }
+        #Assuntos{
+            display: flex;
+            width: 50%;
+            background-color: lightblue;
+            align-self: center;
+            justify-content: center;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .caixa{
+            background-color: grey;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        div#bola{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border:3px dashed black;
+            border-radius: 50%;
+            background-color: white;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="caixa">
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main class="caixa">
+        <section id="Assuntos">
+            <h1>Fofocas do Brasil</h1>
+        </section>
+        <section id="Notícias"> 
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, inventore quo quis animi quaerat placeat laboriosam sunt repellat suscipit eligendi facilis nostrum unde provident sapiente excepturi. Atque ad minus autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi est vitae totam facere pariatur, ipsum distinctio possimus alias perferendis quia, cumque magni nam aut fugiat. Cupiditate odio porro vero?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti natus sed beatae reprehenderit a nostrum id qui quam, error recusandae fuga perferendis tempore dolorum provident libero pariatur, culpa necessitatibus.</p>
+                <aside>
+                    <p>Artigo escrito por Rodrigo</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Meu site - Todos os direitos reservados</p>
+    </footer>
+    <div id="bola">
+        <img src="favcom_(png).png" alt="Imagem de caveira">
+    </div>
+</body>
+</html>

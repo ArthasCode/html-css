@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color:red;
+            text-decoration: none;
+        }
+        a:visited{
+            color:darkred;
+            
+        }
+       
+        a:hover{
+             background-color: blue;
+        } 
+        a:visited:hover{
+            background-color: cyan;
+        }
+        a:active{
+            color:yellow;
+        }
+        #especial::after{
+            content: " [CLIQUE!]";
+            font-size: 0.6em;
+            color:red;
+            
+        }
+        #especial::before{
+            content:'[CLIQUE!] ';
+            font-size: 0.6em;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://youtubem.com/cursoemvideo/" target="_blank">Youtube</a></li>
+        <li><a href="https://github.com/gustavoguanabara/" target="_blank">Github</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" id="especial">Curso em vídeo</a></li>
+    </ul>
+</body>
+</html>
