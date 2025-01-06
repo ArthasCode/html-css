@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagem de fundo</title>
     <style>
+        :root{
+            --cor1:skyblue;
+        }
         body{
             margin: 0;
+            background-image: url('Imagens/wallpaper001.jpg');
         }
         header{
             position: sticky;
@@ -14,12 +18,32 @@
             background-color: gray;
             padding: 1px;
         }
+        .quadrado{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            background-color: grey;
+            border-radius: 10px;
+        }
+        #q1{
+background-color: var(--cor1);
+        }
+        #q2{
+background-image: linear-gradient(to bottom, yellow ,red 60%,blue);
+        }
+        #q3{
+background-image: url('Imagens/pattern001.png');
+        }
     </style>
 </head>
 <body>
+   
     <header>
         <h1>Teste de imagem de fundo e cabeçalho que acompanha</h1>
-    </header>
+    </header> 
+    <figure class="quadrado"id="q1"></figure>
+    <figure class="quadrado"id="q2"></figure>
+    <figure class="quadrado"id="q3"></figure>
     <main>
         <h2>
             Subtítulo
@@ -27,9 +51,6 @@
         <p>Lorem, ipsum dolor <a href="#" download="#" type="application"> download </a> sit amet consectetur adipisicing elit. Accusantium nemo reprehenderit beatae quibusdam praesentium est hic non ex voluptatibus nesciunt repellendus molestias sint facere, et, excepturi dicta cumque? Neque, libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam commodi deleniti neque praesentium dolor velit saepe cupiditate sunt, labore optio odit culpa aspernatur similique quos porro consequatur id explicabo corrupti?</p>
         <h2>Mais Teste</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ullam dolorum facilis quas optio quam earum numquam, dignissimos itaque mollitia, saepe debitis alias sed omnis non ex dicta nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, expedita! Nisi, quidem? Blanditiis repudiandae molestias ipsum est. Corrupti praesentium doloremque adipisci laborum ducimus provident, perspiciatis aliquid similique commodi fuga illo.</p>
-        <figure>
-            <img src="Homem das cavernas.jpeg" alt="Imagem de homem das cavernas" height="1500px">
-        </figure>
     </main>
 </body>
-</html>
+<
