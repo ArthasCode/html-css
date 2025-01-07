@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+ES+Deco+Guides&family=Sriracha&display=swap');
 @font-face {
     font-family: Passion;
-    src: url('Fontes/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    src: url('../Fontes/Passion_One/PassionOne-Regular.ttf') format('truetype');
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
 }
 *{
     margin: 0;
@@ -16,44 +17,55 @@ header{
     text-align: center;
     color: white;
 }
-header a{
+header a, footer a{
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-header a:hover{
+header a:hover, footer a:hover{
     text-decoration: underline;
 
 }
 h1{
     font-family: Passion, sans-serif;
-    margin: auto;
     font-size: 10vw;
     font-weight: regular;
+    font-variant: small-caps;
 }
 main p{
+    display: inline-block;
     font-family: 'Sriracha',cursive;
-    width: 43%;
-    font-size: 3.5vw;
+    
     margin: 20px;
-    padding:70px 0px 70px 25px;
+    padding: 5px; 
 }
-div#joaninha{
-    background:black url('imagens/background001.jpg') no-repeat center fixed;
+section{
+    padding-top:10vh;
+    padding-bottom: 10vh;
+    font-size: 3.5vw;
+    line-height: 2.5em;
+    padding-left: 30px;
+}
+section.imagem{
+    background-color: rgb(56, 55, 55);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed; 
     color: white;
-    padding:70px 0px 70px 20px;
+}
+section.imagem p{
+    border-radius: 20px;
+}
+#joaninha{
+    background-image: url('../imagens/background001.jpg');
 }
 .especial{
-    display: inline-block;
     background-color: rgba(0, 0, 0, 0.318);
     padding:5px;
 }
-div#livro{
-    background: black url('imagens/background002.jpg') no-repeat center fixed;
-    background-size: cover;
-    color: white;
-    padding:70px 0px 70px 20px;
+#livro{
+    background-image: url('../imagens/background002.jpg');
 }
 footer{
     background-color: black;
