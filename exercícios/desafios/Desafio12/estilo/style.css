@@ -35,24 +35,25 @@ h1{
 main p{
     display: inline-block;
     font-family: 'Sriracha',cursive;
-    
     margin: 20px;
     padding: 5px; 
 }
 section{
-    padding-top:10vh;
-    padding-bottom: 10vh;
+    padding-top:5vh;
+    padding-bottom: 5vh;
     font-size: 3.5vw;
     line-height: 2.5em;
     padding-left: 30px;
 }
 section.imagem{
     background-color: rgb(56, 55, 55);
-    background-position: center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
     color: white;
+    box-shadow: inset 6px 6px 5px rgba(0, 0, 0, 0.57);
+    text-shadow: 0.3vw 0.3vh 1px rgba(0, 0, 0, 0.444);
 }
 section.imagem p{
     border-radius: 20px;
