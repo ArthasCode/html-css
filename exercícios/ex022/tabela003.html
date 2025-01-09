@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagens de células</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 1000px;
+        }
+        thead{
+            background-color: gray;
+            color:antiquewhite;
+        }
+        td,th{
+            border: 1px solid black;
+            padding:10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>coluna 1</th>
+                <th>coluna 2</th>
+                <th>coluna 3</th>
+                <th>coluna 4</th>
+                <th>coluna 5</th>
+                <th>coluna 6</th>
+                <th>coluna 7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">A</td>
+                <td rowspan="3">C</td>
+                <td colspan="4" rowspan="4">M</td>
+            </tr>
+            <tr>
+                <td rowspan="3">D</td>
+                <td>E</td>
+                
+            </tr>
+            <tr>
+                
+                <td>H</td>
+                
+            </tr>
+            <tr>
+                
+                <td colspan="2">K</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
