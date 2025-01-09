@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela HTML com CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div#tabela{
+            overflow-x: auto;
+        }
+        table {
+            width: 1000px;
+            border-collapse: collapse;
+            margin-top: 20px;
+            position: relative;
+        }
+        td#principal{
+            position: sticky;
+            left:0;
+            background-color: rgba(128, 128, 128, 0.329);
+        }
+        thead th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+
+        tbody td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+
+        caption {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Alunos</h1>
+
+    <div id="tabela">
+        <table>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <caption>Notas dos Alunos</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="principal">Maria</td>
+                    <td>17</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <td id="principal">João</td>
+                    <td>16</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td id="principal">Ana</td>
+                    <td>18</td>
+                    <td>7.5</td>
+                </tr>
+                <tr>
+                    <td id="principal">Carlos</td>
+                    <td>19</td>
+                    <td>9.2</td>
+                </tr>
+                <tr>
+                    <td id="principal">Fernanda</td>
+                    <td>17</td>
+                    <td>8.8</td>
+                </tr>
+                <tr>
+                    <td id="principal">Pedro</td>
+                    <td>16</td>
+                    <td>7.0</td>
+                </tr>
+                <tr>
+                    <td id="principal">Julia</td>
+                    <td>18</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td id="principal">Lucas</td>
+                    <td>17</td>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <td id="principal">Mariana</td>
+                    <td>19</td>
+                    <td>7.8</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
