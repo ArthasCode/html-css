@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio dos filmes</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        *{
+            margin: 0;
+        }
+        @font-face {
+            font-family: Bebas;
+            src: url(Fontes/Bebas-Regular.otf) format('opentype');
+        }
+        header{
+            background:red url('Imagens/Netflix_LinkdinHeader_N_Texture_5.png') no-repeat center scroll;
+            background-size: cover;
+            color: white;
+            padding: 10px;
+        }
+        header >h1{
+            width: 75vw;
+            border-radius: 20px;
+            margin: auto;
+            text-align: center;
+            font-family: Bebas;
+            font-size: 7vw;
+            color: red;
+            background-color: black;
+            
+        }
+        header>h1>img{
+            display: inline;
+            vertical-align: middle;
+            width: 3.5vw;
+        }
+        nav{
+            background-color: red;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            transition-duration: 1s;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color: black;
+            color: red;
+            
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+            width: 500px;
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        th,td{
+            border: 1px solid gray;
+            padding: 10px;
+            background-color: black;
+            color:red;
+        }
+        th{
+            background-color: gray;
+            color: antiquewhite;
+        }
+        td:hover{
+            color: white;
+        }
+        aside{
+            padding: 10px;
+        }
+        .lateral{
+            border-right:0px;
+        }
+        .inferior{
+            border-bottom: 0px;
+        }
+        #lateral-inferior{
+            border-right: 0px;
+            border-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> <img src="Imagens/channels4_profile.jpg" alt="N da Netflix">ossos principais assinantes!</h1>
+        
+    </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Suporte</a>
+            <a href="#">Perfil</a>
+            <a href="#">Saiba Mais</a>
+        </nav>
+    <aside>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nome</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td class="lateral">Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td rowspan="2">Hulk</td>
+                    <td>Inception</td>
+                    <td class="lateral">Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Matrix</td>
+                    <td class="lateral">Big hero</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Homens</th>
+                    <td>Bruno Mendonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td class="lateral">Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td rowspan="2" class="inferior">Wall-E</td>
+                    <td>Old boy</td>
+                    <td class="lateral">Dangal</td>
+                </tr>
+                <tr>
+                    <td class="inferior">Fabiano Mota</td>
+                    <td class="inferior">Star Wars 5</td>
+                    <td id="lateral-inferior">Toy Story</td>
+                </tr>
+            </tbody>
+        </table>
+    </aside>
+</body>
+</html>
