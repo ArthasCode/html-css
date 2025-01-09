@@ -47,7 +47,7 @@ section{
 }
 section.imagem{
     background-color: rgb(56, 55, 55);
-    background-position: right center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
