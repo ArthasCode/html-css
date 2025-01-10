@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blá blá blá</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th{
+            background-color: gray;
+            color: antiquewhite;
+        }
+        col#coluna-nome{
+            background-color: green;
+        }
+        col.coluna-importante{
+            background-color: red;
+        }
+        col#coluna-sexo{
+            background-color: yellow;
+        }
+        .overflow{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="overflow">
+        <table>
+            <colgroup>
+                <col id="coluna-nome">
+                <col id="coluna-idade" class="coluna-importante">
+                <col id="coluna-sexo">
+                <col id="coluna-profissão" class="coluna-importante">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Pablo</td>
+                    <td>M</td>
+                    <td>36</td>
+                    <td>Banqueiro</td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>M</td>
+                    <td>57</td>
+                    <td>Açougueiro</td>
+                </tr>
+                <tr>
+                    <td>Juliana</td>
+                    <td>F</td>
+                    <td>29</td>
+                    <td>Estilista</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
