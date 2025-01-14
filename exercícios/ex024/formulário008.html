@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Output</h1>
+    <form action="" autocomplete="on" method="get">
+        <div>
+            <label for="in1">Número</label>
+            <input type="number" name="n1" id="in1" min="0" min="50" oninput="isoma.innerHTML=Number(in1.value)+Number(in2.value)">
+        </div>
+        <div>
+            <label for="in2">Número</label>
+            <input type="number" name="n2" id="in2" min="0" min="50" oninput="isoma.innerHTML=Number(in1.value)+Number(in2.value)">
+        </div>
+        <div>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+        <div>
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" value="5" min="0" max="10" oninput="ival.innerText=`Valor do range: ${Number(inum.value)}`">
+            <label><output id="ival">Valor do range: </output></label>
+        </div>
+        <div>
+            <label for="iano">Ano de Nascimento</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" step="1" oninput="iidade.innerHTML=2024-Number(iano.value)">
+            <label for="iidade">Sua idade: </label>
+            <output id="iidade" name="idade">0</output>
+        </div>
+    </form>
+</body>
+</html>

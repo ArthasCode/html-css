@@ -26,3 +26,6 @@ legend{
 fieldset{
     border: 19px solid black;
 }
+select{
+    margin: 10px;
+}
