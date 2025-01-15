@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Robot;
+    src: url('../../Fontes/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
+}
+
+/*estilo para telas*/
+
+:root{
+    --corFundo:rgb(178, 178, 178);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    line-height: 1.4em;
+}
+.Robot{
+    font-family: Robot,'Courier New', Courier, monospace;
+}
+header{
+   padding: 10px;
+    background-color: var(--corFundo);
+}
+h1,h2{
+    padding: 10px;
+    text-align: center;
+}
+p{
+    padding: 10px;
+}
+nav{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+header ul{
+    text-align: center;
+}
+header a::before{
+    content: '📰';
+}
+nav li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: var(--corFundo);
+    font-size: 1.1em;
+    padding: 8px;
+    color: gray;
+}
+article{
+    min-width: 450px;
+    max-width: 800px;
+    margin: auto;
+}
