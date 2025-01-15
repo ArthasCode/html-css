@@ -1,1 +1,48 @@
 @charset "UTF-8";
+
+/* Versão "Mobile First" */
+
+@font-face {
+    font-family: Robot;
+    src: url('../../Fontes/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    background: url('../imagens/back-phone.jpg') no-repeat;
+    background-size: cover;
+    background-position: center ;
+    padding: 10px;
+}
+h1{
+    font-family: Robot,'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.471);
+    font-size: 2em;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.816);
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+#tv{display: none;}
+#pc{display: none;}
+#tablet{display: none;}
+#impressora{display: none;}
