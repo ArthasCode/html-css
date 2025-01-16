@@ -1,1 +1,11 @@
 @charset "UTF-8";
+
+/* Versão para Impressora */
+
+html,body{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1,h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+}

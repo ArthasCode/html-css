@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* Versão para telas grandes */
+
+@media screen and (min-width:992px) {
+    body{
+    font-size: 1.5vw;
+    }
+}
+span.icone{
+    display: none;
+}
+menu{
+    display: block;
+}
+menu a{
+    display: inline-block;
+}

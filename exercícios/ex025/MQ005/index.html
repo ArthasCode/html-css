@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/print.css">
-    <link rel="stylesheet" href="estilos/small.css" media="screen and (max-width:768px)">
-    <link rel="stylesheet" href="estilos/medium.css" media="screen and (min-width:768px) and (max-width:1100px)">
-    <link rel="stylesheet" href="estilos/big.css" media="screen and (min-width:1100px) and (max-width:1500px)>
-    <link rel="stylesheet" href="estilos/huge.css" media="screen and (min-width:1500px)">
+    <link rel="stylesheet" href="estilos/print.css" media="print">
+    <link rel="stylesheet" href="estilos/grandes.css" media="screen and (min-width:768px)">
     <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="tamanho()">
     <header>
-        <h1>Meu site</h1>
-        <menu>
-                <a href="#">Opção 1</a> 
-                <a href="#">Opção 2</a> 
-                <a href="#">Opção 3</a> 
-                <a href="#">Opção 4</a> 
-                <a href="#">Opção 5</a> 
+        <h1>Meu site</h1> 
+        <span class="material-symbols-outlined icone" onclick="click_menu()">menu</span>
+        <menu id="menu">
+               
+                <a href="#" class="opcao">Opção 1</a> 
+                <a href="#" class="opcao">Opção 2</a> 
+                <a href="#" class="opcao">Opção 3</a> 
+                <a href="#" class="opcao">Opção 4</a> 
+                <a href="#" class="opcao">Opção 5</a> 
         </menu>
     </header>
     <main>
@@ -39,5 +39,42 @@
 <p>O Parque Ecológico Primavera estará aberto ao público diariamente, das 6h às 20h, com entrada gratuita. As autoridades municipais esperam que o espaço se torne um ponto de encontro e integração para toda a comunidade.</p>
         </article>
     </main>
+    <script> 
+        const menu=document.getElementById('menu');
+        function click_menu(){  
+            const opcoes = document.querySelectorAll('.opcao');
+            opcoes.forEach(opcao => {
+                    opcao.style.opacity = '0';
+                    opcao.style.transform = 'translateY(10px)';
+                     });
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none';
+            }
+            else{
+               
+                menu.style.display='block';
+               
+                opcoes.forEach((opcao,index)=>{
+                    setTimeout(()=>{
+                        opcao.style.opacity= '1';
+                        opcao.style.transform='translateY(0)';
+                    }, index*300);
+            });
+        } 
+    }
+        function tamanho(){
+            if (window.innerWidth>= 768){
+                menu.style.display='block';
+                const opcoes=document.querySelectorAll('.opcao');
+                opcoes.forEach(opcao =>{
+                    opcao.style.opacity='1';
+                    opcao.style.transform='translateY(0)';
+                });
+            }else{
+                menu.style.display='none'
+            }
+        }
+       
+    </script>
 </body>
 </html>
