@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+nav#menu{
+    display: block;
+    align-self: center;
+    padding: 10px;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+span.icone{
+    display: none;
+}
+.opcao{
+  display: inline-block;
+   
+}

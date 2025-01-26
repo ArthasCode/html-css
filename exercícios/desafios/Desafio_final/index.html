@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/grandes.css" media="screen and (min-width:768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="tamanho()">
+    <header>
+        <h1>a queda do vale do silício</h1> 
+        <span class="material-symbols-outlined icone" onclick="menu()">menu</span>
+        <nav id="menu">
+          
+                <a href="#" class="opcao">Opção 1</a>
+                <a href="#" class="opcao">Opção 2</a>
+                <a href="#" class="opcao">Opção 3</a>
+                <a href="#" class="opcao">Opção 4</a>
+                <a href="#" class="opcao">Opção 5</a>
+                <a href="#" class="opcao">Opção 6</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section>
+          <p>O mundo presenciou um evento de grande impacto que promete mudar o rumo de diversas áreas, desde a economia até a sociedade. Este marco histórico vem sendo acompanhado por especialistas e curiosos ao redor do globo, que analisam suas consequências e possibilidades futuras.</p>
+        </section>
+  
+        <section>
+          <h2>Preparações e Desafios Iniciais</h2>
+          <p>Desde os primeiros sinais de que algo grandioso estava por vir, autoridades e organizações começaram a se preparar. Diversos setores da sociedade tiveram que se adaptar rapidamente, enfrentando desafios inéditos e mobilizando recursos para lidar com a situação. A resposta inicial foi marcada por incertezas, mas também por ações coordenadas.</p>
+          <p>As primeiras reações foram de surpresa e, em alguns casos, de preocupação. No entanto, análises posteriores trouxeram mais clareza sobre os possíveis desdobramentos. Enquanto alguns observadores viam o evento como uma ameaça, outros enxergavam nele uma oportunidade para inovação e progresso.</p>
+          <p>Ainda assim, as opiniões permanecem divididas, com algumas pessoas acreditando que este evento trará mudanças positivas de longo prazo, enquanto outras veem com cautela os impactos sociais e econômicos que poderão surgir.</p>
+        </section>
+  
+        <section>
+          <h2>Impactos Econômicos e Mobilização Social</h2>
+          <p>A economia global foi diretamente afetada por esse evento, resultando em alterações significativas nos mercados financeiros e nas cadeias de suprimento. Especialistas têm observado flutuações inesperadas e uma reconfiguração de prioridades nos investimentos de vários setores. Muitos países tiveram que rever suas estratégias econômicas.</p>
+          <p>Além disso, as implicações sociais são vastas. Comunidades ao redor do mundo começaram a se organizar para lidar com as consequências e aproveitar possíveis oportunidades. Organizações não-governamentais e coletivos locais desempenharam um papel crucial nesse processo, promovendo iniciativas de apoio mútuo e de desenvolvimento sustentável.</p>
+          <p>Empresas e governos estão colaborando para mitigar os impactos negativos e maximizar os benefícios. Apesar das dificuldades enfrentadas, há um consenso de que o evento serviu como catalisador para mudanças estruturais, algumas das quais já eram necessárias há muito tempo.</p>
+        </section>
+  
+        <section>
+          <h2>Perspectivas para o Futuro</h2>
+          <p>Com tantas mudanças em andamento, as expectativas para o futuro são altas. Muitos acreditam que este evento marcará o início de uma nova era, em que a cooperação internacional e a inovação desempenharão papéis fundamentais. As discussões sobre sustentabilidade e justiça social ganharam ainda mais relevância.</p>
+          <p>No entanto, desafios ainda precisam ser superados, especialmente no que diz respeito à desigualdade e à inclusão social. Muitas comunidades vulneráveis enfrentam obstáculos significativos para se adaptar às novas condições e aproveitar as oportunidades emergentes.</p>
+          <p>Olhando para frente, especialistas apontam que a colaboração internacional será essencial para garantir que os frutos desse marco sejam colhidos por todos. Este é, sem dúvida, um momento único que ficará registrado na história. Continuaremos acompanhando os desdobramentos e trazendo atualizações à medida que mais informações se tornem disponíveis.</p>
+        </section>
+      </main>
+    <footer></footer>
+    <script>
+        function menu(){
+            var menu=document.getElementById('menu');
+            if (menu.style.display=='block'){
+                 menu.style.display="none";
+            }
+            else {
+                menu.style.display='block';
+            }
+        }
+        function tamanho(){
+            var menu=document.getElementById('menu')
+            if (window.innerWidth >= 768){
+                menu.style.display='block';
+            }else{
+                menu.style.display='none';
+            }
+        }
+    </script>
+</body>
+</html>
