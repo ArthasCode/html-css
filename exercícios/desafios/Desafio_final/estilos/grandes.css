@@ -7,10 +7,8 @@ header{
     flex-flow: row wrap;
 }
 nav#menu{
-    display: block;
-    align-self: center;
-    padding: 10px;
-    justify-content: flex-end;
+    display: flex;
+   
     padding-right: 20px;
 }
 span.icone{

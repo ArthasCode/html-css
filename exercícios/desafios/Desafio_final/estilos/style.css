@@ -5,6 +5,7 @@
     --cor_cinza_escuro:rgb(69, 69, 69);
     --cor_azul_escuro:rgb(15, 5, 94);
     --cor_cinza_claro:rgb(218, 218, 218);
+    --cor_sombra:rgba(0, 0, 0, 0.518);
 }
 
 *{
@@ -28,6 +29,7 @@ h1{
 nav#menu{
     display: none;
     text-align: center;
+    padding: 10px;
 }
 span.icone{
     margin: auto;
@@ -45,10 +47,12 @@ span.icone{
     margin: 5px;
     text-decoration: none;
     background-color: var(--cor_azul_escuro);
-    padding: 10px; 
+    padding: 10px;
+    box-shadow: 2px 2px 2px var(--cor_sombra);
     transition: background-color .7s ease, color .7s ease, transform .3s ease;
 }
 a.opcao:hover{
+    box-shadow: 5px 5px 7px var(--cor_sombra);
     background-color: var(--cor_cinza_claro);
     color: var(--cor_azul_escuro);
     transform: translateY(-5px);
