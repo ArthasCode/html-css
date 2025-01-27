@@ -26,6 +26,7 @@ h1{
     color: white;
     padding: 10px 20px;
     font-size: 2.5em;
+    text-shadow: 2px 2px 1px var(--cor_sombra);
 }
 nav#menu{
     display: none;
@@ -76,4 +77,22 @@ a.opcao:hover{
     text-indent: 1.5em;
     line-height: 1.7em;
     text-align: justify;
+ }
+ footer{
+    box-shadow:inset 3px 3px 4px var(--cor_sombra);
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--cor_azul_escuro);
+    color: var(--cor_cinza_claro);
+ }
+ a#arthas{
+    text-decoration: none;
+    color: var(--cor_cinza);
+ }
+ a#arthas::before{
+    content:'\1F517';
+ }
+ a#arthas:hover{
+    text-decoration: underline;
  }
